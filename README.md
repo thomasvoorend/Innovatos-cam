@@ -70,7 +70,7 @@ As you can see, the 5V port is already in use. So you have to place the 5V cable
 
 ![](./typora-user-images/breadboard-pir.JPG)
 
-![](./typora-user-images/screwpir.JPG)
+![](./typora-user-images/pir.JPG)
 
 
 Go to the GitHub page (github.com/thomasvoorend/innovatos-cam) and download the "InnovatosPir.ino" folder
@@ -91,7 +91,7 @@ Open the arduino serial monitor at baud rate 115200, move your hand in front of 
 ![img](./typora-user-images/printtext.png)
 
 **If the PIR sensor does not measure anything, the sensitivity must be adjusted. This can be done by turning the orange screw on the side a quarter turn.** 
-![img](./typora-user-images/pir.JPG)
+![img](./typora-user-images/screwpir.JPG)
 
 ## Say cheese! 
 

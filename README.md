@@ -6,7 +6,7 @@ Workshop details on how to build your own security camera with a ESP32-CAM
 
 ## Connect hardware on breadboard
 
-![picture of breadboard](.\typora-user-images\pinout-usbtottl.jpg)
+![picture of breadboard](./typora-user-images/pinout-usbtottl.jpg)
 
 ![](./typora-user-images/breadboard-overview.JPG)
 
@@ -68,9 +68,9 @@ VCC to the 5V port on your ESP,
 
 As you can see, the 5V port is already in use. So you have to place the 5V cable from the USB to TTL converter and the 5V from the PIR to the + line on your breadboard, and place a male to male cable between this line and the 5V port on the ESP.
 
-![](.\typora-user-images\breadboard-pir.JPG)
+![](./typora-user-images/breadboard-pir.JPG)
 
-![](.\typora-user-images\pir.JPG)
+![](./typora-user-images/pir.JPG)
 
 
 
@@ -106,7 +106,7 @@ Go to that URL (make sure your laptop is in the same network!) and click 'Start 
 
 If you correctly align your face it will enable you to detect, enroll your face and recognize it.
 
-![1548605743828](.\typora-user-images\1548605743828.png)
+![SCREENSHOT](./typora-user-images/1548605743828.png)
 
 ## CHALLENGE!
 

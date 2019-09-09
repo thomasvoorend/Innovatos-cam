@@ -40,7 +40,7 @@ If you have been following our previous workshop you already now what is coming:
 
 But on the ESP32-CAM it is not just any led blinking; its a flash that you can use later to brighten up the surroundings for the camera.
 
-Go to the GitHub page (github.com/thomasvoorend/innovatos-cam) and download the "InnovatosBlink.ino" file
+Go to the GitHub page (github.com/thomasvoorend/innovatos-cam) and download the "InnovatosBlink.ino" folder
 
 Open it in the Arduino IDE and select the 'AiThinker ESP32-CAM' under Tools > Board, and the COM port under Tools > Port
 
@@ -73,8 +73,22 @@ As you can see, the 5V port is already in use. So you have to place the 5V cable
 ![](./typora-user-images/pir.JPG)
 
 
+Go to the GitHub page (github.com/thomasvoorend/innovatos-cam) and download the "InnovatosPir.ino" folder
 
-TODO: Code for PIR sensor
+Open it in the Arduino IDE and select the 'AiThinker ESP32-CAM' under Tools > Board, and the COM port under Tools > Port
+
+To upload our program to the ESP32-CAM, we have to set it in 'Download' mode, it can be done by connecting a jumper cable to port IO0 and GND, then we have to press the reset button on the ESP32-CAM, unfortunately it is on the bottom.
+
+Click on upload, and wait for the file to upload
+
+After uploading, remove the jumper cable between IO0 and GND, and press the reset button again.
+
+**WARNING, the led is now much brighter!!!**
+
+Open the arduino serial monitor at baud rate 115200, move your hand in front of the PIR sensor. The led should turn on and a message will printed in the serial monitor. 
+
+**If the PIR sensor does not measure anything, the sensitivity must be adjusted. This can be done by turning the orange screw on the side a quarter turn.** 
+
 
 ## Say cheese! 
 

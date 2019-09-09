@@ -87,7 +87,7 @@ After uploading, remove the jumper cable between IO0 and GND, and press the rese
 
 Open the arduino serial monitor at baud rate 115200, move your hand in front of the PIR sensor. The led should turn on and a message will printed in the serial monitor. 
 
-![img](./typora-user-images/serialmonitor.png)
+![img](./typora-user-images/serialmoni.png)
 ![img](./typora-user-images/printtext.png)
 
 **If the PIR sensor does not measure anything, the sensitivity must be adjusted. This can be done by turning the orange screw on the side a quarter turn.** 

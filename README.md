@@ -70,7 +70,7 @@ As you can see, the 5V port is already in use. So you have to place the 5V cable
 
 ![](./typora-user-images/breadboard-pir.JPG)
 
-![](./typora-user-images/pir.JPG)
+![](./typora-user-images/screwpir.JPG)
 
 
 Go to the GitHub page (github.com/thomasvoorend/innovatos-cam) and download the "InnovatosPir.ino" folder

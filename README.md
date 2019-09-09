@@ -91,7 +91,7 @@ Open the arduino serial monitor at baud rate 115200, move your hand in front of 
 ![img](./typora-user-images/printtext.png)
 
 **If the PIR sensor does not measure anything, the sensitivity must be adjusted. This can be done by turning the orange screw on the side a quarter turn.** 
-![img](./typora-user-images/screwpir.JPG)
+![img](./typora-user-images/screwpir.png)
 
 ## Say cheese! 
 

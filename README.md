@@ -32,7 +32,7 @@ Connect the USBTOTTL with the USB cable to your laptop
 5. Add **https://dl.espressif.com/dl/package_esp32_index.json** to additional Boards manager URLs
 6. Go to **Tools** > **Board** > **Boards Manager**
 7. Search for ESP32
-8. Install it
+8. Install it **(Please install version 1.0.2 instead of 1.0.3)**
 
 ## Blink!
 

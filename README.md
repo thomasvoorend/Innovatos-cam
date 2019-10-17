@@ -35,8 +35,7 @@ Connect the USBTOTTL with the USB cable to your laptop
 8. Install it **(Please install version 1.0.2 instead of 1.0.3)**
 
 ## Blink!
-
-If you have been following our previous workshop you already now what is coming: blink!
+We will start with a blinking light.
 
 But on the ESP32-CAM it is not just any led blinking; its a flash that you can use later to brighten up the surroundings for the camera.
 
@@ -54,7 +53,46 @@ The light should now be flashing
 
 
 
-## Test to see if the ESP can detect movement
+
+## Say cheese! 
+
+Download the InnovatosCamWebserver folder from our GitHub and open it in the Arduino IDE,
+
+change the following parameters to the Innovatos WiFi, or to your own hotspot:
+
+```
+const char* ssid = "<YOUR-WIFI-SSID>";
+const char* password = "<WIFI-PASSWORD>";
+```
+
+Reconnect the jumper cable between IO0 and GND, and reset the board.
+
+You can now upload the code.
+
+After the upload has finished open 'Serial Monitor' and set the baud rate to 115200,
+
+now remove the jumper cable and reset the ESP32-CAM. You should now see the following in the Serial Monitor:
+
+```
+WiFi connected
+Starting web server on port: '80'
+Starting stream server on port: '81'
+Camera Ready! Use 'http://172.20.10.2' to connect
+```
+
+Go to that URL (make sure your laptop is in the same network!) and click 'Start Stream'
+
+If you correctly align your face it will enable you to detect, enroll your face and recognize it.
+
+![SCREENSHOT](./typora-user-images/1548605743828.png)
+
+## CHALLENGE!
+
+Now we've made a system with a movement detection and a light, and another system with a camera and face recognition. Can you combine it?
+
+Tip: use the app_httpd.cpp file in the webserver folder
+
+## EXTRA: Test to see if the ESP can detect movement
 
 First, we connect a movement sensor, called a PIR sensor to our ESP board. If you remove the cap from the sensor you see the labels of the pins.
 
@@ -94,41 +132,3 @@ The led should turn on and a message will printed in the serial monitor.
 
 **If the PIR sensor does not measure anything, the sensitivity must be adjusted. This will be done by turning the orange screw on the side a quarter turn.** 
 ![img](./typora-user-images/screwpir.png)
-
-## Say cheese! 
-
-Download the InnovatosCamWebserver folder from our GitHub and open it in the Arduino IDE,
-
-change the following parameters to the Innovatos WiFi, or to your own hotspot:
-
-```
-const char* ssid = "<YOUR-WIFI-SSID>";
-const char* password = "<WIFI-PASSWORD>";
-```
-
-Reconnect the jumper cable between IO0 and GND, and reset the board.
-
-You can now upload the code.
-
-After the upload has finished open 'Serial Monitor' and set the baud rate to 115200,
-
-now remove the jumper cable and reset the ESP32-CAM. You should now see the following in the Serial Monitor:
-
-```
-WiFi connected
-Starting web server on port: '80'
-Starting stream server on port: '81'
-Camera Ready! Use 'http://172.20.10.2' to connect
-```
-
-Go to that URL (make sure your laptop is in the same network!) and click 'Start Stream'
-
-If you correctly align your face it will enable you to detect, enroll your face and recognize it.
-
-![SCREENSHOT](./typora-user-images/1548605743828.png)
-
-## CHALLENGE!
-
-Now we've made a system with a movement detection and a light, and another system with a camera and face recognition. Can you combine it?
-
-Tip: use the app_httpd.cpp file in the webserver folder
